@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+from xgboost import XGBClassifier
 
 # ------------------------------------------------
 # Page config MUST be the first Streamlit command
@@ -215,3 +216,4 @@ Upload a CSV file containing the required columns:
 
         except Exception as e:
             st.error(f"Error processing file: {e}")
+
